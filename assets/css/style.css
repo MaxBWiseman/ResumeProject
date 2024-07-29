@@ -1,1 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0;
+}
+
+.logo {
+    background: url("assets/images/editedbuffpython.png")
+}
