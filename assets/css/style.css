@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+/* Colours */
+.bg-color-name-title {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0;
+}
+/* Heading */
+.heading {
+    
+}
+
 header {
   background: #333;
   color: #fff;
@@ -8,6 +21,21 @@ header {
   margin: 0;
 }
 
-.logo {
-    background: url("assets/images/editedbuffpython.png")
+.name {
+    font-family: 'Exo', sans-serif;
+    font-size: 46px;
+    font-weight: 100;
+    color: #fff;
+    margin-top: 50px;
 }
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    color: #fff;
+}
+
+
