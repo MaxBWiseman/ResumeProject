@@ -108,6 +108,10 @@ header {
     color: #fafafa;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 /*special padding/margins/text*/
 
 h1,h2.h3,h4 {
