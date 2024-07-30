@@ -129,6 +129,7 @@ header {
     float: none;
 }
 
+.history-heading,
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
@@ -276,3 +277,45 @@ footer {
 
 }
 
+/*work history*/
+
+.work-history-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    padding: 43px 2em 0em 2em;
+    position: relative;
+    color:#333;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 2em;
+    display:block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:after {
+   width: 12px;
+   height: 12px;
+   display: block;
+   top: 2.4em;
+   position: absolute;
+   left: -6px;
+   border-radius: 12px;
+   content: '';
+   background:#676767
+}
