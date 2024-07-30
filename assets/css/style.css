@@ -132,6 +132,16 @@ header {
     margin-bottom: 40px;
 }
 
+/*About*/
+
+@media (min-width: 992px) {
+    .last-item {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
 /*special padding/margins/text*/
 
 h1,
