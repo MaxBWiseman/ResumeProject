@@ -54,7 +54,7 @@ header {
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     color: #fff;
     width: 100%;
 }
@@ -128,10 +128,8 @@ header {
 .section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
-    margin-top: 50px;
+    margin-top: 55px;
     margin-bottom: 40px;
-    text-align:center;
-    
 }
 
 /*special padding/margins/text*/
