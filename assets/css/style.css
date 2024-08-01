@@ -139,8 +139,14 @@ header {
 .section-column {
     display: table-cell;
     vertical-align: middle;
-    padding: 0 30px 30px;
+    padding: 0 30px 15px;
     float: none;
+}
+
+@media (max-width: 576px) {
+    .section-column {
+       padding-left: 15px;
+    }
 }
 
 .history-heading,
