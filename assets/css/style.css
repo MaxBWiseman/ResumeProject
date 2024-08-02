@@ -282,7 +282,7 @@ footer {
 .personal-info-item .key,
 .personal-info-item .value {
     display: inline-block;
-    padding-right: 8px;
+    padding-right: 50px;
 }
 
 .personal-info-item .key p,
