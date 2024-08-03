@@ -398,6 +398,16 @@ footer {
     margin: 0 auto;
     max-width: 70%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-form form {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 button[type="submit"] {
@@ -417,3 +427,5 @@ button[type="submit"] {
 .btn:hover {
     background-color: #aa2222;
 }
+
+
