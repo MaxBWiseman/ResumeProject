@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
+/*body/html*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    
+}
 /* Colours */
 .bg-color-name-title {
     background-color: #333;
@@ -100,7 +110,7 @@ header {
     }
 }
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 980px) {
     .header-image {
         height: 350px;
         margin-top: 50px;
@@ -174,11 +184,7 @@ header {
     float: none;
 }
 
-@media (max-width: 576px) {
-    .section-column {
-        padding-left: 15px;
-    }
-}
+
 
 .history-heading,
 .section-heading {
@@ -281,7 +287,7 @@ footer {
 .personal-info-item .key,
 .personal-info-item .value {
     display: inline-block;
-    padding-right: 50px;
+    padding-right: 55px;
 }
 
 .personal-info-item .key p,
