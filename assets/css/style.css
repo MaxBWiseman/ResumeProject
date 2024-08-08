@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
 /*body/html*/
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -103,7 +104,7 @@ header {
 
 @media (max-width: 768px) {
     .header-image {
-        height: 400px; 
+        height: 400px;
         margin-top: 30px;
     }
 }
@@ -112,7 +113,7 @@ header {
 @media (max-width: 576px) {
     .header-image {
         height: 300px;
-        margin-top: 20px; 
+        margin-top: 20px;
     }
 }
 
@@ -433,22 +434,22 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .form {
+}
+
+.form {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     font-family: "Exo", sans-serif;
-    font-weight:500;
-    
-  }
-  
-  .group {
+    font-weight: 500;
+
+}
+
+.group {
     position: relative;
-  }
-  
-  .form .group label {
+}
+
+.form .group label {
     font-size: 14px;
     color: rgb(99, 102, 102);
     position: absolute;
@@ -456,10 +457,10 @@ footer {
     left: 10px;
     background-color: #fafafad8;
     transition: all .3s ease;
-  }
-  
-  .form .group input,
-  .form .group textarea {
+}
+
+.form .group input,
+.form .group textarea {
     padding: 10px;
     border-radius: 5px;
     border: 2px solid rgba(0, 0, 0, 0.2);
@@ -467,33 +468,35 @@ footer {
     outline: 0;
     width: 100%;
     background-color: transparent;
-  }
-  
-  .form .group input:placeholder-shown+ label, .form .group textarea:placeholder-shown +label {
+}
+
+.form .group input:placeholder-shown+label,
+.form .group textarea:placeholder-shown+label {
     top: 10px;
     background-color: transparent;
-  }
-  
-  .form .group input:focus,
-  .form .group textarea:focus {
+}
+
+.form .group input:focus,
+.form .group textarea:focus {
     border-color: #3366cc;
-  }
-  
-  .form .group input:focus+ label, .form .group textarea:focus +label {
+}
+
+.form .group input:focus+label,
+.form .group textarea:focus+label {
     top: -10px;
     left: 10px;
     background-color: #e67e22;
     color: #3366cc;
     font-weight: 600;
     font-size: 14px;
-  }
-  
-  .form .group textarea {
+}
+
+.form .group textarea {
     resize: none;
     height: 100px;
-  }
-  
-  .form button {
+}
+
+.form button {
     background-color: #e67e22;
     color: #fff;
     border: none;
@@ -502,10 +505,8 @@ footer {
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
-  }
-  
-  .form button:hover {
+}
+
+.form button:hover {
     background-color: #aa2222;
-  }
-  
-  
+}
