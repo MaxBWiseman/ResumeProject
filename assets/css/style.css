@@ -7,9 +7,6 @@ html, body {
     padding: 0;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    
-}
 /* Colours */
 .bg-color-name-title {
     background-color: #333;
@@ -100,8 +97,23 @@ header {
 }
 
 .header-image {
-    height: 400px;
+    height: 550px;
     margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .header-image {
+        height: 400px; 
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .header-image {
+        height: 300px;
+        margin-top: 20px; 
+    }
 }
 
 @media (max-width: 768px) {
@@ -113,8 +125,9 @@ header {
 @media (min-width: 576px) and (max-width: 980px) {
     .header-image {
         height: 350px;
-        margin-top: 50px;
+        margin-top: 20px;
         margin-left: 10px;
+        margin-bottom: 10px;
     }
 
     .container,
