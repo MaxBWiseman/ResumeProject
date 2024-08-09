@@ -214,6 +214,8 @@ header {
     margin-top: 55px;
     margin-bottom: 40px;
 }
+/*map*/
+div#map {min-height: 360px;}
 
 /*About*/
 
