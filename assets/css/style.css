@@ -78,7 +78,7 @@ header {
     font-size: 46px;
     font-weight: 100;
     color: #fff;
-    margin-top: 50px;
+    margin-top: 36px;
 }
 
 .title {
@@ -287,6 +287,8 @@ footer {
 #footer-details {
     padding: 20px;
 }
+
+
 
 /*three reasons*/
 
@@ -601,6 +603,9 @@ footer {
   }
 
 /*GitHub*/
+.right-align {
+    margin-left: 50px;
+}
 
 br {
     display: block;
