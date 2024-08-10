@@ -14,7 +14,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="manifest" href="assets/images/site.webmanifest">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <title>Max's Resume</title>
 </head>
 
@@ -52,13 +53,14 @@
                                 </li>
                                 <li
                                     class="col-6 col-sm-3 col-lg-8 ui-menu-color-about list-inline-item mb-3 menuitem hvr-outline-in mx-3">
-                                    <a class="nav-link hvr-icon-pulse-grow" href="interests.html"><i class="fa fa-users hvr-icon"
+                                    <a class="nav-link hvr-icon-pulse-grow" href="interests.html"><i
+                                            class="fa fa-users hvr-icon"
                                             aria-hidden="true"></i><span>Interests</span></a>
                                 </li>
                                 <li
                                     class="col-6 col-sm-3 col-lg-8 ui-menu-color-portfolio list-inline-item mb-3 menuitem hvr-outline-in mx-3">
-                                    <a class="nav-link hvr-icon-pulse-grow" href="github.html"><i class="fa fa-github hvr-icon"
-                                            aria-hidden="true"></i><span>GitHub</span></a>
+                                    <a class="nav-link hvr-icon-pulse-grow" href="github.html"><i
+                                            class="fa fa-github hvr-icon" aria-hidden="true"></i><span>GitHub</span></a>
                                 </li>
                                 <li
                                     class="col-6 col-sm-3 col-lg-8 ui-menu-color-contact list-inline-item mb-3 menuitem hvr-outline-in mx-3">
@@ -80,17 +82,26 @@
                 <h5 class="uppercase text-center">You can also search on other user profiles</h5>
                 <div id="gh-user-data-nousername"></div>
                 <div class="center-form mb-3">
-                    
+
                     <input type="text" id="gh-username" value="octocat" oninput="fetchGitHubInformation()" />
                     <div id="loader-container"></div>
-                    <div id="gh-user-data"></div>
+
                     <div id="gh-repo-data"></div>
-                    
+
 
                 </div>
             </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div id="gh-user-data">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
     </section>
     <footer class="container-fluid">
         <div id="footer-details" class="row">
