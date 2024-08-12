@@ -47,11 +47,8 @@ function fetchGitHubInformation(event) {
         return;
     }
 
-    $('#loader-container').html(
-        `<div class="loader" alt="loading...">
-            
-        </div>`
-    );
+    $('#loader-container').show();
+    
     $.when(
         $.getJSON(`https://api.github.com/users/${username}`),
         $.getJSON(`https://api.github.com/users/${username}/repos`)
@@ -70,5 +67,8 @@ function fetchGitHubInformation(event) {
                 $('#gh-user-data').html(`<h2 class="text-center">Error: ${errorResponse.responseJSON.message}</h2>`);
             }
         }
-    );
+    ).always(function() {
+        // Hide the loader
+        $('#loader-container').hide();
+    })
 }
