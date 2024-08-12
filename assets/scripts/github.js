@@ -61,10 +61,13 @@ function fetchGitHubInformation(event) {
         },
         function(errorResponse) {
             if (errorResponse.status === 404) {
-                $('#gh-user-data').html(`<h2 class="text-center">No info found for user ${username}</h2>`);
+                $('#gh-user-data').html(`<h4 class="text-center">No info found for user ${username}</h4>`);
+            } else if (errorResponse.status === 403) {
+                let resetTime = new Date(errorResponse.getResponseHeader('X-RateLimit-Reset') * 1000);
+                $('#gh-user-data').html(`<h4 class="text-center">Too many requests, please wait until ${resetTime.toLocaleTimeString()}</h4>`);
             } else {
                 console.log(errorResponse);
-                $('#gh-user-data').html(`<h2 class="text-center">Error: ${errorResponse.responseJSON.message}</h2>`);
+                $('#gh-user-data').html(`<h4 class="text-center">Error: ${errorResponse.responseJSON.message}</h4>`);
             }
         }
     ).always(function() {
