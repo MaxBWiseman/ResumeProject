@@ -870,7 +870,7 @@ br {
 /*newNav*/
 
 .card2 {
-  width: 310px;
+  width: 370px;
   height: 254px;
   border-radius: 4px;
   background: #212121;
@@ -924,34 +924,27 @@ br {
   transform: rotate(0);
 }
   
-
-/* Default padding */
 .stack-nav {
   padding: 40px;
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
   .stack-nav {
     padding: 3.5em;
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
+@media (max-width: 975px) {
   .stack-nav {
-    padding: 3em;
+    padding: 1.5em;
+  }
+
+  .card2 p:hover span {
+    transform: rotate(-90deg);
+    
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  .stack-nav {
-    padding: 2.5em;
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .stack-nav {
     padding: 0.1em;
@@ -959,5 +952,10 @@ br {
 
   .card2 {
     gap: 5px;
+  }
+
+  .card2 p:hover span {
+    transform: rotate(-90deg);
+    
   }
 }
