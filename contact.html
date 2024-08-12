@@ -16,12 +16,16 @@
     <link rel="manifest" href="assets/images/site.webmanifest">
     <title>Max's Resume</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("D5DaxPh9gcLazRpTG");
-        })();
-     </script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "D5DaxPh9gcLazRpTG",
+  });
+})();
+</script>
 </head>
 
 <body>
@@ -110,15 +114,15 @@
                                 <div class="card3 center-form">
                                     <form class="form" onsubmit="return sendMail(this)">
                                         <div class="group">
-                                            <input id="fullname" name="name" placeholder="Your Name" type="text" required>
+                                            <input id="fullname" name="name" placeholder="" type="text" required>
                                             <label for="name">Name</label>
                                         </div>
                                         <div class="group">
-                                            <input placeholder="Your Email" type="email" id="emailaddress" name="emailaddress" required>
+                                            <input placeholder="" type="email" id="emailaddress" name="emailaddress" required>
                                             <label for="email">Email</label>
                                         </div>
                                         <div class="group">
-                                            <textarea placeholder="Your Comment" id="comment" name="comment" rows="5"
+                                            <textarea placeholder="" id="comment" name="comment" rows="5"
                                                 required></textarea>
                                             <label for="comment">Comment</label>
                                         </div>
