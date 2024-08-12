@@ -15,6 +15,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="manifest" href="assets/images/site.webmanifest">
     <title>Max's Resume</title>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("D5DaxPh9gcLazRpTG");
+        
+            emailjs.sendForm('service_zqkglz4', 'resume_request_1dnfsx8', '#emailForm').then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                },
+                (error) => {
+                    console.log('FAILED...', error);
+                }
+            );
+        })();
+     </script>
 </head>
 
 <body>
@@ -101,7 +115,7 @@
                                 <h3 class="contact-heading uppercase text-center white-text p-5">Fancy a chat?</h3>
                                 <h5 class="uppercase text-center white-text">Get hold of me here!</h5>
                                 <div class="card3 center-form">
-                                    <form class="form">
+                                    <form class="form" id="emailForm">
                                         <div class="group">
                                             <input placeholder="" type="text" required="">
                                             <label for="name">Name</label>
@@ -115,7 +129,8 @@
                                                 required=""></textarea>
                                             <label for="comment">Comment</label>
                                         </div>
-                                        <button type="submit">Submit</button>
+                                        <button type="submit" onclick="sendEmail()">Submit</button>
+                                        
                                     </form>
                                 </div>
                             </div>
@@ -190,6 +205,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 </body>
 
 </html>
